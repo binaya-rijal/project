@@ -58,7 +58,7 @@ header {
 .glow-title {
     font-size: 2.5rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: var(--text-primary);
     position: relative;
     z-index: 1;
@@ -79,27 +79,6 @@ header {
     z-index: -1;
     border: 1px solid var(--border-color);
     box-shadow: 0 0 20px var(--glow-color);
-}
-
-.glow-title::after {
-    content: '';
-    position: absolute;
-    inset: -11px -21px;
-    border-radius: 12px;
-    padding: 1px;
-    background: linear-gradient(
-        45deg,
-        transparent 30%,
-        var(--accent-color) 50%,
-        transparent 70%
-    );
-    -webkit-mask: 
-        linear-gradient(#fff 0 0) content-box, 
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    opacity: 0.5;
-    animation: borderRotate 4s linear infinite;
 }
 
 .subtitle {
